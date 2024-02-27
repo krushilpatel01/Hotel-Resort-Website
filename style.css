@@ -1,0 +1,388 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1500px;
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  /* height: 700px; */
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-detail {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.text-detail {
+  top: 300px;
+}
+
+.text-detail h3 {
+  color: white;
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-size: 20px;
+}
+
+.text-detail h1 {
+  color: white;
+  font-size: 82px;
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-weight: 900;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 25px 0px;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+
+
+.navbar-brand {
+  width: 20%;
+}
+
+.navbar-brand img {
+  width: 30%;
+}
+
+.navbar-collapse {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.navbar-nav {
+  justify-content: space-between;
+}
+
+.navbar-collapse .navbar-nav .nav-item {
+  width: 100px;
+}
+
+.navbar-collapse .nav-item a {
+  color: white;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sidebar {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  /* background: #151719; */
+  top: 108px;
+  right: -500px;
+  transition: all 500ms linear;
+  /* background-color: black; */
+  z-index: 99;
+}
+
+#sidebar .toggle-btn {
+  position: fixed;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  z-index: 1;
+  color: #f7bebe;
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: end;
+  top: 25px;
+  right: 20px;
+  justify-content: end;
+}
+
+#sidebar.active {
+  right: -40px;
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  background-color: black;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.section-start {
+  padding-top: 100px;
+}
+
+.black-box {
+  background-color: black;
+  padding: 150px 0px;
+  position: absolute;
+  top: 700px;
+  z-index: 1999;
+}
+
+.black-box label {
+  color: white;
+}
+
+.black-box input {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.book_now {
+  padding: 20px 80px;
+  position: absolute;
+  z-index: 1999;
+  color: rgb(255, 255, 255);
+  /* background-color: white; */
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+#light-section {
+  margin-top: 200px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#light-section span {
+  position: absolute;
+  font-size: 140px;
+  top: -20px;
+  right: 0;
+  left: 0;
+  opacity: 0.090;
+  font-family: "Playfair Display", "Helvetica Neue";
+}
+
+#light-section h2 {
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#light-section h6 {
+  font-weight: 400;
+}
+
+#light-section .main-line {
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#light-section p {
+  font-weight: 400;
+  max-width: 1000px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#light-section h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#light-section .name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.avatar-img {
+  width: 8%;
+  border-radius: 100%;
+  margin: 20px 0px;
+}
+
+.ocupation {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.banner-bar {
+  position: relative;
+}
+
+.inner-img {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 99;
+}
+
+.inner-img img {
+  width: 10px;
+}
+
+.banner-bar .main-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.banner-bar .main-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 0px 10px;
+  bottom: -200px;
+  transition: all 1s ease-in-out;
+}
+
+.main-title .heading {
+  font-size: 30px;
+  padding: 10px 0px;
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-size: 30px;
+}
+
+
+.banner-bar:hover>.main-title {
+  bottom: 0px;
+}
+
+#offer-section {
+  text-align: center;
+  margin: 100px auto;
+}
+
+#offer-section h6 {
+  opacity: 0.7;
+}
+
+.view-more {
+  margin: 20px 0px;
+  border: 1px solid black;
+  padding: 10px 30px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.view-more:active {
+  border: none;
+}
+
+#badview-slider {
+  background-color: black;
+  padding: 100px 0px;
+}
+
+.room-detail h2 {
+  font-size: 40px;
+  color: white;
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-weight: 800;
+}
+
+.room-detail h6 {
+  color: green;
+  text-decoration: underline;
+}
+
+.room-detail p {
+  color: white;
+  margin: 30px 0px;
+}
+
+.room-detail a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+  transition: all 0.1s ease-in-out;
+}
+
+.room-detail a:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.room-photos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#testimonials {
+  margin: 100px auto;
+}
+
+.testimonials-class {
+  width: 100%;
+}
+
+.heading {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-weight: 800;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.avatar-img01 {
+  width: 70%;
+  border-radius: 100%;
+  margin: 20px 0px;
+}
+
+footer{
+  background-color: black;
+  padding: 50px 0px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.footer-menu ul{
+  list-style: none;
+}
+.footer-menu ul li{
+  width: 20%;
+  text-align: center;
+  border: .7px solid white;
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.footer-menu ul li a{
+  text-decoration: none;
+}
+
+.footer-menu ul li:hover{
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+    #sidebar{
+        display: none;
+    }
+    .navbar-toggler-icon{
+        display: block;
+        color: white;
+    }
+    .nav-item{
+        text-align: center;
+    }
+    .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+      }
+}
+
+/* @media only screen and (max-width: 1200px) {
+    .navbar-brand {
+        width: 10%;
+    }
+
+    #sidebar {
+        width: 30%;
+        position: absolute;
+        left: 1200px;
+        right: 0px;
+        transition: all 500ms linear;
+        top: 20px;
+    }
+} */

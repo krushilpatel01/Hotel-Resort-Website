@@ -62,6 +62,13 @@
                     <div class="sidenavbar">
                         <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#" id="demomenu-1">HOME</a>
+                            <a href="#" id="demomenu-2">ROOMS</a>
+                            <a href="#" id="demomenu-3">LOCATION</a>
+                            <a href="#" id="demomenu-4">ACTIVIES</a>
+                            <a href="#" id="demomenu-5">GALLARY</a>
+                            <a href="#" id="demomenu-6">BLOG</a>
+                            <a href="#" id="demomenu-7">CONTACT</a>
                             <a href="#">GYM</a>
                             <a href="#">SPA</a>
                             <a href="#">PACKAGE</a>
@@ -220,6 +227,39 @@
             },
         });
     </script>
+
+<script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.getElementById('demomenu-1').style.display ="block";
+            document.getElementById('demomenu-2').style.display ="block";
+            document.getElementById('demomenu-3').style.display ="block";
+            document.getElementById('demomenu-4').style.display ="block";
+            document.getElementById('demomenu-5').style.display ="block";
+            document.getElementById('demomenu-6').style.display ="block";
+            document.getElementById('demomenu-7').style.display ="block";
+        } else {
+            document.getElementById('demomenu-1').style.display ="none";
+            document.getElementById('demomenu-2').style.display ="none";
+            document.getElementById('demomenu-3').style.display ="none";
+            document.getElementById('demomenu-4').style.display ="none";
+            document.getElementById('demomenu-5').style.display ="none";
+            document.getElementById('demomenu-6').style.display ="none";
+            document.getElementById('demomenu-7').style.display ="none";
+        }
+    }
+
+    // Create a MediaQueryList object
+    var x = window.matchMedia("(max-width: 790px)")
+
+    // Call listener function at run time
+    myFunction(x);
+
+    // Attach listener function on state changes
+    x.addEventListener("change", function () {
+        myFunction(x);
+    });
+</script>
 </body>
 
 </html>

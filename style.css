@@ -755,6 +755,7 @@ footer {
 }
 
 .other-img3 {
+  position: relative;
   height: 350px;
   background: url(images/page-head-4.jpg);
   background-position: center;
@@ -766,12 +767,13 @@ footer {
   width: 100%;
   height: 100%;
 }
-.text-detail1 {
-  position: absolute;
-  top: 10px;
-  bottom: 100px;
-  left: 20px;
+
+.text-detail2 {
+  /* top: 160px; */
+  /* bottom: 100px; */
+  /* left: 20px; */
   /* right: 0px; */
+  padding-top: 200px;
   text-align: left;
 }
 
@@ -783,4 +785,159 @@ footer {
   color: white;
   font-family: "Playfair Display", "Helvetica Neue";
   font-size: 20px;
+}
+
+.page-section span a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+/* blog page */
+.blog-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.blogs {
+  position: relative;
+}
+
+.blog-details-btn {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid green;
+  background-color: transparent;
+  color: green;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-detail-btn2 {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 50px;
+  transition: all 600ms ease-in-out;
+}
+
+.blog-details-btn:hover>.blog-detail-btn2 {
+  top: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.blog-detail-btn2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.demo-btn {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: green;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  bottom: 0px;
+  transition: all 1s ease-in-out;
+}
+
+.blog-detail button:hover>.demo-btn {
+  bottom: 100px;
+  color: rgb(136, 53, 53);
+  z-index: 1;
+
+}
+
+.blogs h2 {
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-weight: 800;
+}
+
+.blogs p {
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+
+.page-item .page-link {
+  border: none;
+  color: black;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 0px;
+  text-indent: 10px;
+}
+
+.icon::before {
+  background-image: url(images/);
+}
+
+.contact-detail h2,
+.recent-photos h2,
+.categories h2,
+.tags h2,
+.comments h2 {
+  font-family: "Playfair Display", "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 900;
+  list-style: none;
+}
+
+.contact-detail ul,
+.recent-photos ul,
+.categories ul,
+.tags ul,
+.comments ul {
+  list-style: none;
+  text-indent: 0;
+  padding: 0px;
+}
+
+.icon-set span {
+  margin: 0px 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rp .images-detail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Playfair Display", "Helvetica Neue";
+}
+
+.rp .images-detail h5 {
+  font-size: 18px;
+  font-family: "Playfair Display", "Helvetica Neue";
+  color: gray;
+}
+
+.tags ul li {
+  margin: 5px;
+}
+
+.tags ul li button {
+  font-size: 12px;
+  padding: 5px 17px;
+  background-color: transparent;
+  border: 0.5px solid black;
+}
+.tags ul li button:hover{
+  color: white;
+  background-color: #465328;
+}
+
+.comment-list span {
+  margin: 5px;
+  font-size: 14px;
 }

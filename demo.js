@@ -56,6 +56,6 @@ function getvalue(){
     console.log(message);
 }
 
-function showvalue extends getvalue{
-    console.log(name);
-}
+// function showvalue extends getvalue{
+//     console.log(name);
+// }

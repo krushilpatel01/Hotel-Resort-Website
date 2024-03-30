@@ -36,3 +36,26 @@ function closeNav() {
 
     document.getElementById("navbar2").style.display = "none";
 }
+
+
+
+// for contact for get value
+
+function getvalue(){
+    var name = document.getElementById("p-name").value;
+    var mobile = document.getElementById("p-phone").value;
+    var mail = document.getElementById("p-mail").value;
+    var subject = document.getElementById("p-subject").value;
+    var message = document.getElementById("p-message").value;
+
+
+    console.log(name);
+    console.log(mobile);
+    console.log(mail);
+    console.log(subject);
+    console.log(message);
+}
+
+function showvalue extends getvalue{
+    console.log(name);
+}
